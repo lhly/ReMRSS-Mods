@@ -1,0 +1,27 @@
+name: Verify Mod catalogue
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out trusted catalogue validator
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: trusted
+          persist-credentials: false
+      - name: Check out proposed catalogue as data
+        uses: actions/checkout@v6
+        with:
+          path: candidate
+          persist-credentials: false
+      - name: Verify index and changed signed ZIPs
+        run: python3 trusted/catalog.py check candidate --baseline trusted/index.json

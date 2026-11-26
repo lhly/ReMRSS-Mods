@@ -1,0 +1,65 @@
+ReMRSS (independent fork of MiRearScreenSwitcher / MRSS)
+
+Original project: https://github.com/AntiOblivionis/MiRearScreenSwitcher
+Original author: AntiOblivionis
+Upstream testing contributor: 汐木泽
+
+Current maintainer: 冷火凉烟 (GitHub: lhly)
+Maintained project: https://github.com/lhly/ReMRSS
+Issue tracker: https://github.com/lhly/ReMRSS/issues
+
+This independent fork has been modified since 2026-10-11, including shared
+Shizuku service lifecycle fixes and the Android native settings interface.
+2026-10-13: updated maintainer information, project and feedback links,
+upstream credits, and bundled license and corresponding-source entries.
+2026-10-15: added Compose/Miuix home and navigation, direct GitHub feedback,
+and on-demand stable-release update checks in About.
+2026-10-16: renamed this fork to ReMRSS, migrated its application ID and
+source namespace to top.zainzh.rearscreen, and isolated its update feed
+from earlier MRSS installations; the automation URI scheme is retained.
+2026-10-17: unified settings and service visuals, added independent permission
+checks and an offline tutorial, and removed unused code, resources and
+dependency metadata while retaining the existing feature set.
+
+2026-10-20: added optional virtual rear casting, gesture navigation and menu,
+per-app rendering and presentation preferences, direct tile addition, and
+validated display-information handling; retained device and session guards.
+
+2026-10-30: added optional device-frame screenshots, per-app layout density
+and size adaptation, maximum camera-avoidance area, reversible lock-screen
+freeze protection, grouped settings and animated mode-dependent controls;
+updated the bundled tutorial. Device-frame artwork is fetched on demand from
+Xiaomi public resources, is not bundled, and retains its original ownership.
+
+Copyright (C) 2026 冷火凉烟, for original contributions to this fork.
+Existing upstream copyright and license notices remain applicable.
+This modified program is distributed under the GNU General Public License,
+version 3. See LICENSE for the complete terms, including the absence of warranty.
+
+Source for a published APK is provided at the matching v<version> tag:
+https://github.com/lhly/ReMRSS/tags
+Build instructions are included in docs/android-studio-release.md at that tag.
+Third-party assets retain their respective ownership; see README.md.
+
+Third-party UI components
+
+Miuix 0.9.4, Copyright 2025–2026 compose-miuix-ui contributors.
+https://github.com/compose-miuix-ui/miuix
+Licensed under the Apache License, Version 2.0; full text is bundled as
+MIUIX-LICENSE.txt and retained in third_party/MIUIX-LICENSE.txt.
+Navigation lens shaders are adapted from the Miuix example, Copyright 2026
+compose-miuix-ui contributors, with upstream work Copyright 2025 Kyant.
+These portions are licensed under Apache-2.0; see MIUIX-LICENSE.txt.
+Compose UI, AndroidX and Kotlin are used under Apache-2.0.
+MaterialKolor 5.0.1, Copyright Jordon de Hoog, is used under the MIT License;
+see MATERIALKOLOR-LICENSE.txt. https://github.com/jordond/materialkolor
+The application as a whole continues to be distributed under GPL-3.0.
+
+Root service transport uses libsu 6.0.0 by John "topjohnwu" Wu (Apache License 2.0).
+Source: https://github.com/topjohnwu/libsu
+License: third_party/LIBSU-LICENSE.txt (also bundled in app assets).
+
+Optional isolated Mod scripting uses QuickJS 2026-06-04 by Fabrice Bellard and
+Charlie Gordon, compiled from upstream source without its `quickjs-libc` host
+wrappers. https://bellard.org/quickjs/
+License: MIT; full text is third_party/QUICKJS-LICENSE.txt and is bundled in app assets.

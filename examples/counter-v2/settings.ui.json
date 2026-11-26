@@ -1,0 +1,1 @@
+{"scene":"settings","root":{"type":"layout.column","children":[{"type":"ui.number","value":{"bind":"state.count"},"style":"displayNumber"},{"type":"ui.button","label":"+1","onPress":{"type":"event","name":"counter.increment"}},{"type":"ui.button","label":"−1","onPress":{"type":"event","name":"counter.decrement"}}]}}
