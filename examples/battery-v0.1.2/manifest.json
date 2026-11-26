@@ -1,0 +1,70 @@
+{
+  "author": {
+    "keyFingerprint": "15fecc0640811fe49cb138c601dae7bf82c17c8ec3b964a4237a406b7b327ac1",
+    "name": "ReMRSS 社区示例"
+  },
+  "capabilities": {
+    "optional": [
+      {
+        "minimumVersion": 1,
+        "name": "rear.scene"
+      },
+      {
+        "name": "rear.scene.keep_visible",
+        "minimumVersion": 1
+      }
+    ],
+    "required": [
+      {
+        "minimumVersion": 1,
+        "name": "data.battery"
+      }
+    ]
+  },
+  "data": {
+    "configSchema": {
+      "additionalProperties": false,
+      "properties": {},
+      "type": "object"
+    },
+    "dataVersion": 1,
+    "stateSchema": {
+      "additionalProperties": false,
+      "properties": {},
+      "type": "object"
+    }
+  },
+  "format": "remrss.mod",
+  "formatVersion": 1,
+  "id": "remrss.community.battery",
+  "minimumAndroidApi": 24,
+  "name": "电量面板",
+  "payloads": [
+    {
+      "bytes": 190,
+      "path": "rear.ui.json",
+      "sha256": "f5beb84c45f77141ae6527636a8fce95878986dc61d401e2e4079fb29692ef8a"
+    },
+    {
+      "bytes": 198,
+      "path": "settings.ui.json",
+      "sha256": "125c2ea3b0269cbeaa179c19aba1094d5e00580e6f0a73a1a8cd949faf354c08"
+    }
+  ],
+  "permissions": {
+    "optional": [],
+    "required": []
+  },
+  "platform": {
+    "api": 1
+  },
+  "runtime": {
+    "kind": "none"
+  },
+  "scenes": {
+    "rear": "rear.ui.json",
+    "settings": "settings.ui.json"
+  },
+  "version": "0.1.2",
+  "versionCode": 3
+}
