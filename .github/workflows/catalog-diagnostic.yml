@@ -1,6 +1,9 @@
 name: Diagnostic - Actions event delivery
 
 on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
   push:
     branches: [community/actions-diagnostic]
 
