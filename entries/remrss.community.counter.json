@@ -1,0 +1,14 @@
+{
+  "id": "remrss.community.counter",
+  "name": "计数器",
+  "author": "ReMRSS 社区示例",
+  "authorFingerprint": "15fecc0640811fe49cb138c601dae7bf82c17c8ec3b964a4237a406b7b327ac1",
+  "version": "0.1.0",
+  "versionCode": 1,
+  "minimumAndroidApi": 29,
+  "summary": "可保存计数；这是升级演示的起始版本。",
+  "downloadUrl": "https://github.com/lhly/ReMRSS-Mods/releases/download/community-preview-v1/remrss-counter-0.1.0.zip",
+  "minimumHostVersionCode": 2027,
+  "size": 2671,
+  "sha256": "86917905591408e25df8ce486af90375e42e48356a5b0c040dd1ce94841032b8"
+}
