@@ -1,0 +1,14 @@
+name: Diagnostic - Actions event delivery
+
+on:
+  push:
+    branches: [community/actions-diagnostic]
+
+permissions: {}
+
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - run: echo "GitHub Actions received this branch's push event."
