@@ -3,12 +3,12 @@
   "name": "电量面板",
   "author": "ReMRSS 社区示例",
   "authorFingerprint": "15fecc0640811fe49cb138c601dae7bf82c17c8ec3b964a4237a406b7b327ac1",
-  "version": "0.1.1",
-  "versionCode": 2,
+  "version": "0.1.2",
+  "versionCode": 3,
   "minimumAndroidApi": 24,
-  "summary": "查看当前电量。允许背屏显示后，可在面板详情手动打开。",
-  "downloadUrl": "https://github.com/lhly/ReMRSS-Mods/releases/download/battery-panel-v0.1.1/remrss-battery-panel-0.1.1.zip",
+  "summary": "查看当前电量；可手动显示到背屏，也可选择让面板保持显示。",
+  "downloadUrl": "https://github.com/lhly/ReMRSS-Mods/releases/download/battery-panel-v0.1.2/remrss-battery-panel-0.1.2.zip",
   "minimumHostVersionCode": 2027,
-  "size": 2201,
-  "sha256": "e09a302ea937bb5348264ad546f96581b7e786ae75d203a51a173309c56597e5"
+  "size": 2215,
+  "sha256": "d296e920a6721eb060dda95b56e68b9ac08b341647a7f232c652756fbff66ddb"
 }
